@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Didática</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="urna">
+
+    <div class="tela">
+
+        <h1>SIMULAÇÃO DE VOTAÇÃO</h1>
+
+        <p class="instrucao">
+            Digite o número do candidato
+        </p>
+
+        <div id="numero" class="numero"></div>
+
+        <div class="candidato">
+
+            <img id="foto"
+            src="https://via.placeholder.com/180x220?text=Foto"
+            alt="Foto">
+
+            <h2 id="nome">---</h2>
+
+            <h3 id="partido">---</h3>
+
+        </div>
+
+        <div class="mensagem" id="mensagem">
+            Digite dois números.
+        </div>
+
+    </div>
+
+    <div class="teclado">
+
+        <div class="linha">
+            <button onclick="digitar('1')">1</button>
+            <button onclick="digitar('2')">2</button>
+            <button onclick="digitar('3')">3</button>
+        </div>
+
+        <div class="linha">
+            <button onclick="digitar('4')">4</button>
+            <button onclick="digitar('5')">5</button>
+            <button onclick="digitar('6')">6</button>
+        </div>
+
+        <div class="linha">
+            <button onclick="digitar('7')">7</button>
+            <button onclick="digitar('8')">8</button>
+            <button onclick="digitar('9')">9</button>
+        </div>
+
+        <div class="linha">
+            <button></button>
+            <button onclick="digitar('0')">0</button>
+            <button></button>
+        </div>
+
+        <div class="linha botoes">
+
+            <button class="branco" onclick="votarBranco()">
+                BRANCO
+            </button>
+
+            <button class="corrige" onclick="corrigir()">
+                CORRIGE
+            </button>
+
+            <button class="confirma" onclick="confirmar()">
+                CONFIRMAR
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="candidatos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
